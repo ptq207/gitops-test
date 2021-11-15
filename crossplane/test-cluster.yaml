@@ -22,7 +22,7 @@ spec:
     autoscaling:
       enabled: true
       maxNodeCount: 1
-      minNodeCount: 2
+      minNodeCount: 3
     initialNodeCount: 1
     locations:
     - asia-southeast1-a
