@@ -7,8 +7,7 @@ spec:
     location: asia-southeast1
     autopilot:
       enabled: false
-    networkRef:
-      name: vpc-bravo-project-nonprod
+    network: vpc-bravo-project-nonprod
     initialClusterVersion: latest
 
 ---
