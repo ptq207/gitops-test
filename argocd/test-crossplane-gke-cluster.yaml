@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ptq204/test-gitops.git
+    repoURL: https://github.com/ptq207/gitops-test.git
     targetRevision: HEAD
     path: crossplane
   destination:
