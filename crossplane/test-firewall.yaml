@@ -1,0 +1,12 @@
+apiVersion: compute.gcp.crossplane.io/v1alpha1
+kind: Firewall
+metadata:
+  name: argocd-ui-ingress
+spec:
+  forProvider:
+    direction: INGRESS
+    allowed:
+    - IPProtocol: tcp
+      ports: ["8081"]
+    networkRef:
+      name: my-test-vpc

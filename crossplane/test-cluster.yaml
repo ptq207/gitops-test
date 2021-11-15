@@ -1,0 +1,32 @@
+apiVersion: container.gcp.crossplane.io/v1beta2
+kind: Cluster
+metadata:
+  name: app-cluster-test
+spec:
+  forProvider:
+    location: asia-southeast2
+    autopilot:
+      enabled: false
+    initialClusterVersion: latest
+
+---
+
+apiVersion: container.gcp.crossplane.io/v1beta1
+kind: NodePool
+metadata:
+  name: app-node-pool-test
+spec:
+  forProvider:
+    autoscaling:
+      enabled: true
+      maxNodeCount: 1
+      minNodeCount: 1
+    initialNodeCount: 1
+    locations:
+    - asia-southeast2-a
+    # - asia-southeast1-b
+    # - asia-southeast1-c
+    clusterRef:
+      name: app-cluster-test
+    maxPodsConstraint:
+      maxPodsPerNode: 100
