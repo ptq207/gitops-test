@@ -10,6 +10,9 @@ spec:
     network: vpc-app-test-cluster
     subnetwork: vpc-app-cluster-test-subnet
     initialClusterVersion: latest
+    ipAllocationPolicy:
+      clusterSecondaryRangeName: vpc-app-cluster-test-pods
+      servicesSecondaryRangeName: vpc-app-cluster-test-services	
 
 ---
 
