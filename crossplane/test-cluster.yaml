@@ -23,7 +23,7 @@ spec:
       minNodeCount: 1
     initialNodeCount: 1
     locations:
-    - asia-southeast2-a
+    - asia-southeast2-b
     # - asia-southeast1-b
     # - asia-southeast1-c
     clusterRef:
