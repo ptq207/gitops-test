@@ -1,5 +1,5 @@
 apiVersion: container.gcp.crossplane.io/v1beta2
-kind: Cluster
+kind: GKECluster
 metadata:
   name: app-cluster-test
 spec:
