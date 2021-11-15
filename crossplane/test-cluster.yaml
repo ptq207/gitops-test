@@ -4,9 +4,11 @@ metadata:
   name: app-cluster-test
 spec:
   forProvider:
-    location: asia-southeast2
+    location: asia-southeast1
     autopilot:
       enabled: false
+    networkRef:
+      name: vpc-bravo-project-nonprod
     initialClusterVersion: latest
 
 ---
@@ -20,10 +22,10 @@ spec:
     autoscaling:
       enabled: true
       maxNodeCount: 1
-      minNodeCount: 1
+      minNodeCount: 2
     initialNodeCount: 1
     locations:
-    - asia-southeast2-b
+    - asia-southeast1-a
     # - asia-southeast1-b
     # - asia-southeast1-c
     clusterRef:
