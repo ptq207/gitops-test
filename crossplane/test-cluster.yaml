@@ -8,6 +8,7 @@ spec:
     autopilot:
       enabled: false
     network: vpc-bravo-project-nonprod
+    subnetwork: vpc-nonprod-k8s-node-bravo
     initialClusterVersion: latest
 
 ---
