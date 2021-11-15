@@ -21,8 +21,8 @@ spec:
   forProvider:
     autoscaling:
       enabled: true
-      maxNodeCount: 1
-      minNodeCount: 3
+      maxNodeCount: 3
+      minNodeCount: 1
     initialNodeCount: 1
     locations:
     - asia-southeast2-b
