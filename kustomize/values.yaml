@@ -3,8 +3,8 @@ spring-boot-http:
     name: "camundacloud/camunda-demo"
     pullPolicy: IfNotPresent
 
-  nameOverride: "bpmn-demo"
-  fullnameOverride: "bpmn-demo"
+  nameOverride: "bpmn-demo-2"
+  fullnameOverride: "bpmn-demo-2"
 
   health:
     liveness:
