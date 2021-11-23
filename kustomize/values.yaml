@@ -1,0 +1,15 @@
+spring-boot-http:
+  image:
+    name: "camundacloud/camunda-demo"
+    pullPolicy: IfNotPresent
+
+  nameOverride: "bpmn-demo"
+  fullnameOverride: "bpmn-demo"
+
+  health:
+    liveness:
+      port: 8080
+      path: /engine-rest/engine
+    readiness:
+      port: 8080
+      path: /engine-rest/engine
